@@ -126,4 +126,4 @@ It filters to failed console logins and counts them by source IP, error reason, 
 - EventBridge suits "tell me every time X happens," while a metric filter plus an alarm suits "tell me when X happens too many times."
 - Writing the event pattern made me look at what a CloudTrail record actually contains (`eventSource`, `eventName`, `requestParameters`), which is the same thing I'd read in a SIEM.
 - The Logs Insights query is basically a hunting query: filter, then group by IP and user. That carries straight over to SIEM work at the ReliaQuest Labs program and to log analysis topics on Security+.
-- This lab pairs with my security groups lab. That one locks down network access, and this one alerts when someone changes it.
+- It's a good companion to my separate security groups lab: that one was about restricting network access with security group rules, and this one was about getting alerted when those kinds of rules change.
